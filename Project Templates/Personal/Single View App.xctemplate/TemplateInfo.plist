@@ -8,8 +8,7 @@
 	<string>com.djohnson.dt.unit.manual.singleViewApplication</string>
 	<key>Ancestors</key>
 	<array>
-		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
-		<string>com.apple.dt.unit.sceneLifecycleApplication</string>
+		<string>com.djohnson.dt.unit.sceneLifecycleApplication</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
@@ -208,7 +207,7 @@ let contentView = ContentView().environment(\.managedObjectContext, context)
 							<key>languageChoice</key>
 							<string>Swift</string>
 							<key>userInterface</key>
-                            <string>UIKit</string>
+							<string>UIKit</string>
 						</dict>
 						<key>Definitions</key>
 						<dict>
