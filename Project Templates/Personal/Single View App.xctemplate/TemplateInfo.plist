@@ -63,7 +63,7 @@
 						<key>RequiredOptions</key>
 						<dict>
 							<key>userInterface</key>
-							<string>Storyboard</string>
+							<string>UIKit</string>
 						</dict>
 						<key>Nodes</key>
 						<array>
@@ -178,7 +178,7 @@ let contentView = ContentView().environment(\.managedObjectContext, context)
 			<key>Values</key>
 			<array>
 				<string>SwiftUI</string>
-				<string>Storyboard</string>
+				<string>UIKit</string>
 			</array>
 			<key>RequiredOptionsForValues</key>
 			<dict>
@@ -208,7 +208,7 @@ let contentView = ContentView().environment(\.managedObjectContext, context)
 							<key>languageChoice</key>
 							<string>Swift</string>
 							<key>userInterface</key>
-							<string>Storyboard</string>
+                            <string>UIKit</string>
 						</dict>
 						<key>Definitions</key>
 						<dict>
@@ -233,7 +233,7 @@ window?.makeKeyAndVisible()</string>
 							<key>languageChoice</key>
 							<string>Swift</string>
 							<key>userInterface</key>
-							<string>Storyboard</string>
+							<string>UIKit</string>
 						</dict>
 						<key>Definitions</key>
 						<dict>
