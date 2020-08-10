@@ -155,12 +155,25 @@
 							<string>SceneDelegate.swift:implementation(SceneDelegate: UIResponder, UIWindowSceneDelegate)</string>
 							<string>SceneDelegate.swift:implementation:properties:window</string>
 							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession(func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions\))</string>
-							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:windowScene</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:rootViewController</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:window</string>
 						</array>
 						<key>Definitions</key>
 						<dict>
 							<key>SceneDelegate.swift:implementation:properties:window</key>
 							<string>var window: UIWindow?</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:windowScene</key>
+							<string>guard let windowScene = scene as? UIWindowScene else {
+  return
+}
+
+</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:window</key>
+							<string>
+window = UIWindow(windowScene: windowScene)
+window?.rootViewController = rootVC
+window?.makeKeyAndVisible()</string>
 						</dict>
 					</dict>
 				</array>

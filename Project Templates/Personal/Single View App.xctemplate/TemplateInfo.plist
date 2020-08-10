@@ -211,16 +211,8 @@ let contentView = ContentView().environment(\.managedObjectContext, context)
 						</dict>
 						<key>Definitions</key>
 						<dict>
-							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
-							<string>guard let windowScene = scene as? UIWindowScene else {
-  return
-}
-
-let vc = ViewController()
-
-window = UIWindow(windowScene: windowScene)
-window?.rootViewController = vc
-window?.makeKeyAndVisible()</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:rootViewController</key>
+							<string>let rootVC = ViewController()</string>
 						</dict>
 					</dict>
 				</array>
@@ -236,17 +228,9 @@ window?.makeKeyAndVisible()</string>
 						</dict>
 						<key>Definitions</key>
 						<dict>
-							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
-							<string>guard let windowScene = scene as? UIWindowScene else {
-  return
-}
-
-let vc = ViewController()
-let nav = UINavigationController(rootViewController: vc)
-
-window = UIWindow(windowScene: windowScene)
-window?.rootViewController = nav
-window?.makeKeyAndVisible()</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:rootViewController</key>
+							<string>let vc = ViewController()
+let rootVC = UINavigationController(rootViewController: vc)</string>
 						</dict>
 					</dict>
 				</array>
